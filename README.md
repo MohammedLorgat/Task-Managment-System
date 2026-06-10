@@ -40,47 +40,38 @@ Users can register, log in, manage their personal tasks, update their profiles, 
 
 This project consumes a REST API for authentication, profile management, file uploads, and task operations.
 
-### API Documentation
-
-https://intern-crud-task-api.onrender.com/api/docs/
-
-### Production Server
-
-```text
-https://intern-crud-task-api.onrender.com
-```
 
 ### Authentication Endpoints
 
-| Method | Endpoint         | Description                    |
-| ------ | ---------------- | ------------------------------ |
-| POST   | /api/auth/signup | Register a new account         |
-| POST   | /api/auth/login  | Login and receive access token |
-| POST   | /api/auth/logout | Logout user                    |
+| Method |          Description            |
+| ------ | ------------------------------- |
+| POST   | Register a new account          |
+| POST   | Login and receive access token  |
+| POST   | Logout user                      |
 
 ### Task Endpoints
 
-| Method | Endpoint               | Description         |
-| ------ | ---------------------- | ------------------- |
-| POST   | /api/tasks             | Create a task       |
-| GET    | /api/tasks             | Get user tasks      |
-| PATCH  | /api/tasks/{id}        | Update task details |
-| PATCH  | /api/tasks/{id}/status | Update task status  |
-| DELETE | /api/tasks/{id}        | Delete a task       |
+| Method |    Description       |
+| ------ | -------------------- |
+| POST   |  Create a task       |
+| GET    |  Get user tasks      |
+| PATCH  |  Update task details |
+| PATCH  |  Update task status  |
+| DELETE |  Delete a task       |
 
 ### Profile Endpoints
 
-| Method | Endpoint     | Description                |
-| ------ | ------------ | -------------------------- |
-| GET    | /api/profile | Retrieve user profile      |
-| PATCH  | /api/profile | Update profile information |
+| Method |        Description           |
+| ------ |  --------------------------- |
+| GET    |  Retrieve user profile       |
+| PATCH  |  Update profile information  |
 
 ### File Upload Endpoints
 
-| Method | Endpoint          | Description           |
-| ------ | ----------------- | --------------------- |
-| POST   | /api/files/upload | Upload profile image  |
-| DELETE | /api/files/delete | Delete uploaded image |
+| Method |      Description       |
+| ------ | ---------------------- |
+| POST   |  Upload profile image  |
+| DELETE |  Delete uploaded image |
 
 ---
 
