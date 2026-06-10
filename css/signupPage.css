@@ -1,0 +1,54 @@
+body {
+  background-color: #f3f4f6;
+}
+
+.signup-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.signup-card h2 {
+  font-size: 2.3rem;
+}
+
+.signup-card p {
+  color: #6c757d;
+}
+
+.form-control,
+.form-select {
+  height: 58px;
+  border-radius: 12px;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+
+.form-floating > label {
+  color: #6c757d;
+}
+
+/* .password-hint {
+  font-size: 0.9rem;
+  color: #6c757d;
+  line-height: 1.4;
+} */
+
+.btn-primary {
+  height: 52px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

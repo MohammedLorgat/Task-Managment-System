@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <!-- !  Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/loginPage.css" />
+  </head>
+  <body>
+    <div
+      class="container d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <div class="login-card p-5 w-100" style="max-width: 450px">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold text-dark mb-2">Welcome Back</h2>
+
+          <!-- <p class="text-light-50">Log in to manage your tasks</p> -->
+        </div>
+
+        <div id="alertContainer"></div>
+
+        <form id="loginForm">
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="name@example.com"
+              autocomplete="email"
+              required
+            />
+            <label for="email">Email Address</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Password"
+              autocomplete="current-password"
+              required
+            />
+            <label for="password">Password</label>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary w-100 py-2"
+            id="loginBtn"
+          >
+            <span class="btn-text"> Sign In </span>
+
+            <span
+              class="spinner-border spinner-border-sm d-none"
+              role="status"
+              aria-hidden="true"
+              id="loginSpinner"
+            ></span>
+          </button>
+        </form>
+
+        <div class="text-center mt-4">
+          <p class="text-light-50 mb-0">
+            Don't have an account?
+
+            <a href="signupPage.html" class="fw-bold"> Sign Up </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/loginPage.js"></script>
+  </body>
+</html>
